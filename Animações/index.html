@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #square{
+            width: 500px;
+            height: 500px;
+            background-color: red;
+            /* display: none; */
+        }
+    </style>
+</head>
+
+<body>
+
+    <button id="button">Button</button>
+    <button id="stop">stop</button>
+
+    <div id="square"></div>
+    
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js "></script>
+    <script>
+
+        /*$("#button").click(() => {
+            $("#square").fadeOut("fast");//faz o square sumir
+        })*/
+        
+        /*$("#button").click(() => {
+            $("#square").fadeIn(1000);//faz o suqare aparecer
+        })*/
+        
+        /*$("#button").click(() => {
+            $("#square").fadeToggle(1500);//intercala,se n tiver faz aparecer,se estiver aparecendo faz sumir
+        })*/
+        
+        /*$("#button").click(() => {
+            $("#square").fadeTo(2000, 0.5);//faz aparecer com a opacidade de sejamo,nesse caso 50%
+        })*/
+        
+        /*$("#button").click(() => {
+            $("#square").slideDown();//faz aparecer de cima pra baixo
+        })*/
+        
+        /*$("#button").click(() => {
+            $("#square").slideUp();//faz sumir de baixo pra cima
+        })*/
+        
+        /*$("#button").click(() => {
+            $("#square").slideToggle();//faz a alternancia do slideUp e slideDown
+        })*/
+
+        /* Função para fazer animações */
+
+        
+        $("#button").click(() => {
+            $("#square").animate({height: 200, width: 50},5000);//podemos por o elemento css que desejamos mudar e seu valor para ser feito a mudança
+        })
+        $("#stop").click(() => {
+            $("#square").stop();
+        })
+
+    </script>
+</body>
+</html>
