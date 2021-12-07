@@ -1,0 +1,13 @@
+.box{
+    box-sizing: border-box; /* usando isso a Largura+padding+borda = width:500px e a largura em si de 470px . Logo a margem maior diminui o elemento interno responsavel pelo conteudo
+    se a borda fosse borde:10px, o resultado de Largura+padding = 480 e nao mais 490 */
+    width: 500px; /* Largura*/
+    background-color: gray;
+    padding: 10px; /* Padding dos dois lados: 10 left + 10 right*/ 
+    border:5px solid black; /* Borda dos dois lados: 5 left + 5 right*/
+    margin: 15px; /* Margem dos dois lados: 15 left + 15 right*/
+    color:white;
+
+    font-size: 20px; 
+
+}
